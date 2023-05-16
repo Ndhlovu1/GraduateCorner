@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "305428801218",
+    "project_id": "graduatecorner-c6a45",
+    "storage_bucket": "graduatecorner-c6a45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305428801218:android:0305de6e6d9f12edf87d5b",
+        "android_client_info": {
+          "package_name": "com.example.graduatecorner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305428801218-8o5if3jjbvj9j1e6kkimrtt0ctvc4mln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbi294fYNjnY58HGuJ3V8jSNiN18zdKRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305428801218-8o5if3jjbvj9j1e6kkimrtt0ctvc4mln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

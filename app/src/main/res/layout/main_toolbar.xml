@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_tool_bar_layout"
+    android:orientation="horizontal"
+    android:padding="22dp"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickMenu"
+        android:src="@drawable/ic_menu" />
+
+    <TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:text="Graduate Corner"
+    android:textAlignment="center"
+    android:textColor="#202F5A"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context=".authentication.LoginActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo2"
+        tools:ignore="ContentDescription"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editxt_background"
+        android:hint="Enter your email"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        android:padding="10dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editxt_background"
+        android:hint="Enter your password"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:padding="10dp"
+        android:autofillHints="" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="LOGIN"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Your Password"
+        android:id="@+id/txt_forgot_pwd"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do not have an account? Register"
+        android:id="@+id/txt_signup"
+        android:layout_marginTop="20dp" />
+
+
+
+
+
+</LinearLayout>

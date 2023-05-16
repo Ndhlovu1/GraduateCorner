@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context=".LandingScreenActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo2"
+        tools:ignore="ContentDescription"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"
+        android:text="Sign in" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="REGISTER"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"
+        />
+
+
+
+</LinearLayout>
