@@ -8,4 +8,6 @@ An app to prepare students for life after varsity
 ![Screenshot from 2023-05-16 17-57-37](https://github.com/Ndhlovu1/GraduateCorner/assets/46927702/0761f712-e940-4e2d-be0f-4b277edca9d6)
 
 # Project Screenshots
+![Screenshot from 2023-05-16 17-36-46](https://github.com/Ndhlovu1/GraduateCorner/assets/46927702/f2bbbc6c-6eb3-4a4e-9951-6c562dbd3d0d)
+
 
