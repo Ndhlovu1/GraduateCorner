@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#fff"
+
     >
 
     <ImageView
@@ -35,14 +36,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:minHeight="48dp"
-        android:onClick="clickDashboard"
+        android:onClick="clickMainDash"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"
-            android:onClick="clickLogo"
             android:src="@drawable/ic_home" />
 
         <TextView
@@ -60,14 +60,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:minHeight="48dp"
-        android:onClick="clickDashboard"
+        android:onClick="clickProfile"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"
-            android:onClick="clickLogo"
             android:src="@drawable/ic_person" />
 
         <TextView
@@ -85,14 +84,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:minHeight="48dp"
-        android:onClick="clickDashboard"
+        android:onClick="clickNotes"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"
-            android:onClick="clickLogo"
             android:src="@drawable/ic_note" />
 
         <TextView
@@ -102,6 +100,30 @@
             android:padding="12dp"
             android:textStyle="bold"
             android:text="Notes" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:minHeight="48dp"
+        android:onClick="logout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_logout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:text="Logout" />
 
     </LinearLayout>
 

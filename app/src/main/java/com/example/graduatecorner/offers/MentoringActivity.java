@@ -1,32 +1,26 @@
-package com.example.graduatecorner;
+package com.example.graduatecorner.offers;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.GridLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.graduatecorner.MainDashboardActivity;
+import com.example.graduatecorner.R;
 import com.example.graduatecorner.authentication.LoginActivity;
 import com.example.graduatecorner.authentication.ProfileActivity;
-import com.example.graduatecorner.Counsellor.CareerCounsellingActivity;
-import com.example.graduatecorner.offers.MentoringActivity;
-import com.example.graduatecorner.offers.NotesActivity;
-import com.example.graduatecorner.offers.SkillsActivity;
-import com.example.graduatecorner.offers.VideoActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainDashboardActivity extends AppCompatActivity {
+public class MentoringActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
     DrawerLayout drawerLayout;
-    GridLayout mainGrid;
 
     @Override
     protected void onStart() {
@@ -46,44 +40,10 @@ public class MainDashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main_dashboard);
+        setContentView(R.layout.activity_mentoring);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
-        mainGrid = (GridLayout) findViewById(R.id.main_grid_Dash);
-        setSingleEvent(mainGrid);
-
-        drawerLayout = findViewById(R.id.drawerlayout);
-        auth = FirebaseAuth.getInstance();
-    }
-
-    //Clickable redirects of the CardViews
-    private void setSingleEvent(GridLayout mainGrid){
-        //Enable the CLick for the cardviews
-
-        for (int i = 0; i<mainGrid.getChildCount(); i++){
-
-            CardView cardView = (CardView)mainGrid.getChildAt(i);
-            final int finalI = i;
-            cardView.setOnClickListener(v -> {
-                if (finalI == 0){
-                    startActivity(new Intent(MainDashboardActivity.this, CareerCounsellingActivity.class));
-                }
-
-                else if (finalI == 1){
-                    startActivity(new Intent(MainDashboardActivity.this, SkillsActivity.class));
-                }
-                else if (finalI == 2){
-                    startActivity(new Intent(MainDashboardActivity.this, VideoActivity.class));
-                }
-                else if (finalI == 3){
-                    startActivity(new Intent(MainDashboardActivity.this, MentoringActivity.class));
-                }
-
-            });
-
-        }
-
-
+        drawerLayout = findViewById(R.id.mentorDrawerLayout);
 
     }
 
@@ -138,14 +98,6 @@ public class MainDashboardActivity extends AppCompatActivity {
         auth.signOut();
         finish();
     }
-
-
-
-
-
-
-
-
 
 
 

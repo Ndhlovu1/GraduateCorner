@@ -8,6 +8,7 @@
     android:gravity="center"
     android:padding="10dp"
     android:id="@+id/drawerlayout"
+    android:background="@drawable/white_bg"
     tools:context=".MainDashboardActivity">
 
 
@@ -61,7 +62,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="JOB COUNSELING"
+                        android:text="@string/job_counseling"
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         />
@@ -101,9 +102,9 @@
                         />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="SKILLS BUILDING"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skills_building"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -141,7 +142,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CAREER VIDEOS"
+                        android:text="@string/career_videos"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -175,12 +176,12 @@
                         android:layout_height="150dp"
                         android:src="@drawable/ment"
                         android:layout_margin="3dp"
-                        />
+                        android:contentDescription="@string/todo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="MENTORING"
+                        android:text="@string/mentoring"
                         android:textColor="@color/black"
                         android:textStyle="bold"/>
                 </LinearLayout>
@@ -190,6 +191,17 @@
         </GridLayout>
 
     </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+    </RelativeLayout>
 
 
 

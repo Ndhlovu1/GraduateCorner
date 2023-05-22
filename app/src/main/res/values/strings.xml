@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GraduateCorner</string>
+    <string name="job_counseling">JOB COUNSELING</string>
+    <string name="skills_building">SKILLS BUILDING</string>
+    <string name="career_videos">CAREER VIDEOS</string>
+    <string name="mentoring">MENTORING</string>
+    <string name="todo">TODO</string>
 </resources>

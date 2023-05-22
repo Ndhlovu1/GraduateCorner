@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="10dp"
-    android:background="@color/white"
+    android:background="@drawable/white_bg"
     tools:context=".authentication.RegisterActivity">
 
 
@@ -79,7 +79,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/register"
+        android:id="@+id/register_btn"
         android:text="Sign Up"
         android:textColor="#FFFFFF"
         android:background="@drawable/button_background"
