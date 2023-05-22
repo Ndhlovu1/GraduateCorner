@@ -12,9 +12,9 @@ import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.graduatecorner.Counsellor.CareerCounsellingActivity;
 import com.example.graduatecorner.authentication.LoginActivity;
 import com.example.graduatecorner.authentication.ProfileActivity;
-import com.example.graduatecorner.Counsellor.CareerCounsellingActivity;
 import com.example.graduatecorner.offers.MentoringActivity;
 import com.example.graduatecorner.offers.NotesActivity;
 import com.example.graduatecorner.offers.SkillsActivity;
@@ -46,6 +46,7 @@ public class MainDashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_main_dashboard);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 

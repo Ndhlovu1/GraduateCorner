@@ -26,6 +26,8 @@
         android:layout_marginTop="15dp"
         android:id="@+id/fullname"
         android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#433F3F"
         android:autofillHints=""
         android:inputType="text" />
 
@@ -37,6 +39,8 @@
         android:layout_marginTop="15dp"
         android:inputType="textEmailAddress"
         android:id="@+id/email"
+        android:textColor="@color/black"
+        android:textColorHint="#433F3F"
         android:padding="10dp"
         android:autofillHints="" />
 
@@ -49,6 +53,8 @@
         android:layout_marginTop="15dp"
         android:id="@+id/institution"
         android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#433F3F"
         android:autofillHints=""
         android:inputType="text" />
 
@@ -60,6 +66,8 @@
         android:layout_marginTop="15dp"
         android:id="@+id/cellphone"
         android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#433F3F"
         android:autofillHints=""
         android:inputType="phone" />
 
@@ -74,6 +82,8 @@
         android:inputType="textPassword"
         android:id="@+id/password"
         android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#433F3F"
         android:autofillHints="" />
 
     <Button
@@ -90,16 +100,11 @@
         android:layout_height="wrap_content"
         android:text="Already have an account? Sign in."
         android:id="@+id/txt_login"
+        android:textSize="15dp"
+        android:textColor="@color/black"
         android:layout_marginTop="20dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/regn_data"
-        android:text="Gender"
-        android:textSize="0sp"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
+
 
 
 
