@@ -12,16 +12,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.graduatecorner.MainDashboardActivity;
 import com.example.graduatecorner.R;
-import com.example.graduatecorner.authentication.LoginActivity;
 import com.example.graduatecorner.authentication.ProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class MentoringActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
     DrawerLayout drawerLayout;
 
+    /**
     @Override
     protected void onStart() {
         super.onStart();
@@ -34,14 +33,13 @@ public class MentoringActivity extends AppCompatActivity {
             finish();
         }
 
-    }
+    } */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_mentoring);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         drawerLayout = findViewById(R.id.mentorDrawerLayout);
 
